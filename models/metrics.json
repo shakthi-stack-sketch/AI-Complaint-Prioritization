@@ -1,0 +1,240 @@
+{
+  "dataset_size": 383,
+  "categories_count": {
+    "Electrical": 60,
+    "Plumbing": 53,
+    "Infrastructure": 46,
+    "IT / Technical": 46,
+    "Security": 37,
+    "Cleaning": 36,
+    "Transportation": 30,
+    "Academic": 28,
+    "Hostel": 28,
+    "Other": 19
+  },
+  "priority_count": {
+    "LOW": 121,
+    "MEDIUM": 107,
+    "HIGH": 105,
+    "CRITICAL": 50
+  },
+  "category_accuracy": 84.42,
+  "priority_accuracy": 72.73,
+  "category_report": {
+    "Academic": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "Cleaning": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 7.0
+    },
+    "Electrical": {
+      "precision": 0.7333333333333333,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.8148148148148148,
+      "support": 12.0
+    },
+    "Hostel": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 6.0
+    },
+    "IT / Technical": {
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.8235294117647058,
+      "support": 9.0
+    },
+    "Infrastructure": {
+      "precision": 0.7,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.7368421052631579,
+      "support": 9.0
+    },
+    "Other": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 4.0
+    },
+    "Plumbing": {
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.8571428571428571,
+      "support": 11.0
+    },
+    "Security": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8571428571428571,
+      "support": 7.0
+    },
+    "Transportation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "accuracy": 0.8441558441558441,
+    "macro avg": {
+      "precision": 0.8740476190476191,
+      "recall": 0.8314213564213564,
+      "f1-score": 0.841674477340112,
+      "support": 77.0
+    },
+    "weighted avg": {
+      "precision": 0.8545454545454547,
+      "recall": 0.8441558441558441,
+      "f1-score": 0.8417315483537187,
+      "support": 77.0
+    }
+  },
+  "priority_report": {
+    "CRITICAL": {
+      "precision": 1.0,
+      "recall": 0.36363636363636365,
+      "f1-score": 0.5333333333333333,
+      "support": 11.0
+    },
+    "HIGH": {
+      "precision": 0.8125,
+      "recall": 0.65,
+      "f1-score": 0.7222222222222222,
+      "support": 20.0
+    },
+    "LOW": {
+      "precision": 0.6363636363636364,
+      "recall": 0.84,
+      "f1-score": 0.7241379310344828,
+      "support": 25.0
+    },
+    "MEDIUM": {
+      "precision": 0.75,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8,
+      "support": 21.0
+    },
+    "accuracy": 0.7272727272727273,
+    "macro avg": {
+      "precision": 0.7997159090909091,
+      "recall": 0.6776948051948052,
+      "f1-score": 0.6949233716475096,
+      "support": 77.0
+    },
+    "weighted avg": {
+      "precision": 0.7650531286894923,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.7170721998308205,
+      "support": 77.0
+    }
+  },
+  "top_keywords": {
+    "Academic": [
+      "exam",
+      "grades",
+      "portal",
+      "error internal",
+      "evaluation",
+      "internal evaluation",
+      "internal",
+      "grades error"
+    ],
+    "Cleaning": [
+      "spilled",
+      "covered spilled",
+      "covered",
+      "coffee",
+      "spilled coffee",
+      "floor covered",
+      "food",
+      "food waste"
+    ],
+    "Electrical": [
+      "light",
+      "power",
+      "electrical",
+      "burnt",
+      "bulb",
+      "bulb blown",
+      "light bulb",
+      "blown"
+    ],
+    "Hostel": [
+      "hostel",
+      "hostel room",
+      "hot",
+      "hot water",
+      "water supply",
+      "turned",
+      "supply turned",
+      "lock jammed"
+    ],
+    "IT / Technical": [
+      "computer",
+      "classroom projector",
+      "projector",
+      "damaged",
+      "failing",
+      "lan",
+      "lab computer",
+      "display"
+    ],
+    "Infrastructure": [
+      "cracked",
+      "latch",
+      "broken",
+      "door",
+      "latch broken",
+      "staircase",
+      "falling",
+      "plaster"
+    ],
+    "Other": [
+      "lost",
+      "regarding",
+      "general",
+      "query",
+      "inquiry regarding",
+      "inquiry",
+      "campus sports",
+      "sports facilities"
+    ],
+    "Plumbing": [
+      "water",
+      "pipe",
+      "tap",
+      "leaking",
+      "water washroom",
+      "drain clogged",
+      "drain",
+      "bathroom drain"
+    ],
+    "Security": [
+      "security",
+      "unattended",
+      "bag",
+      "unattended bag",
+      "gate",
+      "camera",
+      "cctv",
+      "cctv camera"
+    ],
+    "Transportation": [
+      "bus",
+      "route",
+      "schedule",
+      "delayed",
+      "hour",
+      "delayed hour",
+      "schedule delayed",
+      "bus schedule"
+    ]
+  },
+  "feature_count": 1475
+}

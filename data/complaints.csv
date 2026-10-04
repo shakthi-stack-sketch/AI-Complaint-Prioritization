@@ -1,0 +1,384 @@
+text,category,priority,severity,department
+"Sparks flying from the main switchboard near Room 301, major electrical hazard!",Electrical,CRITICAL,CRITICAL,Electrical Works
+Exposed live wire hanging from ceiling in Block B corridor near room 104.,Electrical,CRITICAL,CRITICAL,Electrical Works
+Main circuit breaker panel smoking and smells burnt in Hostel 2 basement.,Electrical,CRITICAL,CRITICAL,Electrical Works
+Short circuit in lab 3 caused small fire near computer desk 12.,Electrical,CRITICAL,CRITICAL,Electrical Works
+Complete power outage in Science Block during final lab examination.,Electrical,HIGH,HIGH,Electrical Works
+Total blackout across Hostel Block 4 since 2 hours ago.,Electrical,HIGH,HIGH,Electrical Works
+Frequent voltage fluctuations causing server reboots in IT Lab 2.,Electrical,HIGH,MEDIUM,Electrical Works
+Ceiling fan making loud rattling noise and shaking violently in Room 204.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Tubelight flickering continuously in Room 108 Block C.,Electrical,MEDIUM,LOW,Electrical Works
+Power socket on wall near desk 4 is loose and not delivering power.,Electrical,MEDIUM,LOW,Electrical Works
+Air conditioner in seminar hall is blowing warm air instead of cooling.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Corridor lights on 3rd floor Block A are burnt out and need replacement.,Electrical,LOW,LOW,Electrical Works
+Wall switch for front light in Room 405 is broken.,Electrical,LOW,LOW,Electrical Works
+Exhaust fan in chemistry lab 1 is turning slowly.,Electrical,LOW,LOW,Electrical Works
+Indicator light on elevator panel is not glowing.,Electrical,LOW,LOW,Electrical Works
+Electrical socket near library reading table 6 is inactive.,Electrical,LOW,LOW,Electrical Works
+Ceiling fan speed controller knob is missing in Room 112.,Electrical,LOW,LOW,Electrical Works
+Light fixture glass shade cracked in admin lobby.,Electrical,LOW,LOW,Electrical Works
+Gas leakage odor detected near chemistry lab pipe valves on floor 2!,Plumbing,CRITICAL,CRITICAL,Maintenance & Plumbing
+Severe sewage backup flooding ground floor hallway of Block A.,Plumbing,CRITICAL,CRITICAL,Maintenance & Plumbing
+Main water pipe burst flooding the basement storage room in library.,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Water leaking continuously from ceiling of Block B classroom 204.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+No water supply in Hostel Block 1 washrooms for past 6 hours.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Overhead tank overflowing causing water stream on external staircase.,Plumbing,HIGH,MEDIUM,Maintenance & Plumbing
+Washbasin pipe broken and leaking heavy water onto washroom floor.,Plumbing,HIGH,MEDIUM,Maintenance & Plumbing
+Flush tank in 2nd floor mens restroom is continuously running and overflowing.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Slow drainage in sink of hostel room 302 causing foul smell.,Plumbing,MEDIUM,LOW,Maintenance & Plumbing
+Tap leaking dripping water steadily in lab 4 pantry.,Plumbing,MEDIUM,LOW,Maintenance & Plumbing
+Hot water geyser not heating properly in Hostel 3 floor 2.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Shower head broken in Hostel 2 bathroom 5.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Water pressure low in 4th floor drinking water fountain.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Washbasin tap handle loose in Block C rest room.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Minor water seepage near window frame during rain in Room 210.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Water purifier drip tray missing in staff lounge.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Slight rust in water coming out of sink tap in Block B ground floor.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Structural concrete slab collapsed on walkway near mechanical block!,Infrastructure,CRITICAL,CRITICAL,Estate & Facilities
+Elevator stuck between 3rd and 4th floor with 3 students inside Block A!,Infrastructure,CRITICAL,CRITICAL,Estate & Facilities
+Heavy plaster ceiling falling down in main lecture auditorium stage area.,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Glass panel of window high floor cracked severely and about to fall down.,Infrastructure,HIGH,HIGH,Estate & Facilities
+"Main entry metal door hinge broken, door jammed half open in Block C.",Infrastructure,HIGH,MEDIUM,Estate & Facilities
+Staircase handrail loose and wobbling dangerously on 3rd floor Block B.,Infrastructure,HIGH,MEDIUM,Estate & Facilities
+Classroom desk and podium wooden legs broken in Room 305.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Door lock handle stuck in room 204 unable to latch properly.,Infrastructure,MEDIUM,LOW,Estate & Facilities
+Multiple tiles cracked and lifted on hallway floor Block A ground floor.,Infrastructure,MEDIUM,LOW,Estate & Facilities
+Window latch broken allowing cold wind into Room 102.,Infrastructure,MEDIUM,LOW,Estate & Facilities
+Chairs in lecture hall 3 have loose screws and shaky armrests.,Infrastructure,LOW,LOW,Estate & Facilities
+Whiteboard frame detached on left side in Room 410.,Infrastructure,LOW,LOW,Estate & Facilities
+Door stopper missing in staff office 105.,Infrastructure,LOW,LOW,Estate & Facilities
+Curtain rod loose in seminar room 2.,Infrastructure,LOW,LOW,Estate & Facilities
+Paint peeling off wall in corridor near room 208.,Infrastructure,LOW,LOW,Estate & Facilities
+Notice board glass frame key missing in main hall.,Infrastructure,LOW,LOW,Estate & Facilities
+"Core campus network router down, entire campus disconnected from internet.",IT / Technical,CRITICAL,HIGH,IT Support Desk
+Ransomware warning popups appearing across library public workstations.,IT / Technical,CRITICAL,CRITICAL,IT Support Desk
+Server room temperature alert high due to cooling unit shutdown.,IT / Technical,CRITICAL,HIGH,IT Support Desk
+Main server switch offline disabling university portal and LMS.,IT / Technical,HIGH,HIGH,IT Support Desk
+Classroom projector in Room 302 not display output and HDMI port damaged.,IT / Technical,HIGH,MEDIUM,IT Support Desk
+The classroom projector is not working.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Wi-Fi network signal dropping constantly in Hostel 3 wing B.,IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Lab computer desktop 15 failing to boot, showing disk error screen.",IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Audio system microphone amplifier cracking loudly in auditorium.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+LAN socket desk 8 in lab 1 damaged and not connecting.,IT / Technical,MEDIUM,LOW,IT Support Desk
+Smartboard touchscreen uncalibrated and unresponsive in Room 105.,IT / Technical,MEDIUM,LOW,IT Support Desk
+Printer in department office printing black streaks on pages.,IT / Technical,LOW,LOW,IT Support Desk
+Mouse cable damaged on computer workstation 4 in library.,IT / Technical,LOW,LOW,IT Support Desk
+Keyboard key missing on PC 12 in computer lab 3.,IT / Technical,LOW,LOW,IT Support Desk
+Monitor brightness buttons broken on lab PC 09.,IT / Technical,LOW,LOW,IT Support Desk
+VGA adapter missing in seminar hall podium.,IT / Technical,LOW,LOW,IT Support Desk
+Campus shuttle bus brake failure reported on campus ring road!,Transportation,CRITICAL,CRITICAL,Fleet & Transit
+Bus 4 breakdown near east gate blocking main exit road.,Transportation,HIGH,HIGH,Fleet & Transit
+Shuttle bus overcrowding dangerously exceeding passenger capacity.,Transportation,HIGH,HIGH,Fleet & Transit
+Morning bus route 2 arrived 45 minutes late missing first exam slot.,Transportation,HIGH,MEDIUM,Fleet & Transit
+Bus driver driving recklessly at high speed inside college zone.,Transportation,HIGH,HIGH,Fleet & Transit
+Shuttle bus air conditioning not working on route 5.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus stop shelter roof leaking rainwater over seating area.,Transportation,MEDIUM,LOW,Fleet & Transit
+Schedule timings banner missing at North gate bus stop.,Transportation,MEDIUM,LOW,Fleet & Transit
+Bicycle parking rack bent and overcrowded near hostel block 2.,Transportation,LOW,LOW,Fleet & Transit
+EV charging point 2 near admin block display screen frozen.,Transportation,LOW,LOW,Fleet & Transit
+Seat fabric torn in bus seat 12 route 3.,Transportation,LOW,LOW,Fleet & Transit
+Speed bump paint worn out near gate 1 causing hard braking.,Transportation,LOW,LOW,Fleet & Transit
+Unidentified intruder spotted near girl's hostel back perimeter wall!,Security,CRITICAL,CRITICAL,Campus Security
+Physical fight and violent altercation broken out near sports ground.,Security,CRITICAL,CRITICAL,Campus Security
+Laboratory door unlocked overnight containing hazardous chemicals.,Security,CRITICAL,HIGH,Campus Security
+CCTV camera offline in high security entrance gate 2.,Security,HIGH,HIGH,Campus Security
+Suspicious unattended backpack left in central library study area.,Security,HIGH,HIGH,Campus Security
+Stolen laptop reported from hostel room 214 while door was unlocked.,Security,HIGH,HIGH,Campus Security
+Street light dark near walkway to sports complex creating security risk.,Security,HIGH,MEDIUM,Campus Security
+Biometric scanner not recognizing student IDs at hostel entry gate.,Security,MEDIUM,MEDIUM,Campus Security
+Visitor logbook missing at security checkpoint block B.,Security,MEDIUM,LOW,Campus Security
+Security guard absent from gate 3 booth during evening shift.,Security,HIGH,MEDIUM,Campus Security
+Emergency exit sign broken and unlit in auditorium corridor.,Security,LOW,LOW,Campus Security
+Keycard lock reader light blinking orange room 104.,Security,LOW,LOW,Campus Security
+Fence wire loose near north perimeter boundary.,Security,LOW,LOW,Campus Security
+Chemical spill of concentrated acid in chemistry lab 2 floor!,Cleaning,CRITICAL,CRITICAL,Sanitation & Hygiene
+Overflowing trash bins creating biohazard foul smell near cafeteria entrance.,Cleaning,HIGH,HIGH,Sanitation & Hygiene
+Washrooms in Block B ground floor extremely dirty and unhygienic.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Stagnant dirty water pool near canteen attracting mosquitoes.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Food waste spilled in corridor of Hostel 1 2nd floor.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Classroom 201 whiteboard dirty and stained not erased from yesterday.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Dust accumulated heavily on library top shelves and books.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Corridor floor sticky due to spilled juice near vending machine.,Cleaning,MEDIUM,LOW,Sanitation & Hygiene
+Trash bin lid missing in Block A hallway.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Window glass panes dusty in Room 304.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Hand soap dispenser empty in rest room floor 3.,Cleaning,MEDIUM,LOW,Sanitation & Hygiene
+Paper towel dispenser empty in faculty lounge washroom.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Exam hall question paper misprint across all copies of Math exam!,Academic,CRITICAL,HIGH,Academic Affairs
+Course portal server down preventing online assignment submission before deadline.,Academic,HIGH,HIGH,Academic Affairs
+Timetable clash between two mandatory major courses in semester 5.,Academic,HIGH,MEDIUM,Academic Affairs
+Grades missing on transcript portal for end semester exam.,Academic,HIGH,MEDIUM,Academic Affairs
+Professor absent without substitute for lecture in Room 101.,Academic,MEDIUM,LOW,Academic Affairs
+Lab manual books out of stock in university bookstore.,Academic,LOW,LOW,Academic Affairs
+Attendance record discrepancy shown in portal for CS201.,Academic,MEDIUM,LOW,Academic Affairs
+Project submission link closed early before official deadline.,Academic,HIGH,MEDIUM,Academic Affairs
+Syllabus copy mismatch between department notice board and online PDF.,Academic,LOW,LOW,Academic Affairs
+Library reference book reserved copy damaged missing pages.,Academic,LOW,LOW,Academic Affairs
+"Hostel room 304 door lock jammed, student trapped inside room!",Hostel,CRITICAL,HIGH,Hostel Management
+Severe bed bug infestation reported across entire Hostel 2 3rd floor.,Hostel,HIGH,HIGH,Hostel Management
+Washing machine in hostel laundry room leaking heavy water and shorting out.,Hostel,HIGH,MEDIUM,Hostel Management
+Hot water geyser tripping main breaker continuously in Hostel 1.,Hostel,HIGH,MEDIUM,Hostel Management
+Hostel mess food quality poor and unhygienic with undercooked items.,Hostel,HIGH,HIGH,Hostel Management
+Mattress torn and spring broken in hostel room 110.,Hostel,MEDIUM,LOW,Hostel Management
+Study room table lamp loose socket in Hostel 3 common room.,Hostel,LOW,LOW,Hostel Management
+Hostel balcony drying rack broken.,Hostel,LOW,LOW,Hostel Management
+Water cooler filter needs replacement in Hostel Block 4 floor 1.,Hostel,MEDIUM,LOW,Hostel Management
+Hostel room cup-board door handle detached.,Hostel,LOW,LOW,Hostel Management
+Lost student wallet containing ID cards and keys found near main quad.,Other,LOW,LOW,Administrative Services
+Inquiry regarding summer internship certificate issuing process.,Other,LOW,LOW,Administrative Services
+Request to update emergency contact phone number in college records.,Other,LOW,LOW,Administrative Services
+General feedback regarding cafeteria seating arrangement.,Other,LOW,LOW,Administrative Services
+Lost umbrella left in seminar hall room 2.,Other,LOW,LOW,Administrative Services
+Query about library opening hours during upcoming national holiday.,Other,LOW,LOW,Administrative Services
+Request for parking permit sticker for new vehicle.,Other,LOW,LOW,Administrative Services
+Light bulb blown out in Block A Room 101.,Electrical,LOW,LOW,Electrical Works
+Light bulb blown out in Block B Classroom 204.,Electrical,LOW,LOW,Electrical Works
+Light bulb blown out in Hostel 3 Floor 2.,Electrical,LOW,LOW,Electrical Works
+Light bulb blown out in Central Library 3rd Floor.,Electrical,LOW,LOW,Electrical Works
+Light bulb blown out in Block C Lab 2.,Electrical,LOW,LOW,Electrical Works
+Light bulb blown out in Main Auditorium.,Electrical,LOW,LOW,Electrical Works
+Electrical outlet sparking dangerously in Block A Room 101!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Electrical outlet sparking dangerously in Block B Classroom 204!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Electrical outlet sparking dangerously in Hostel 3 Floor 2!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Electrical outlet sparking dangerously in Central Library 3rd Floor!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Electrical outlet sparking dangerously in Block C Lab 2!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Electrical outlet sparking dangerously in Main Auditorium!,Electrical,CRITICAL,CRITICAL,Electrical Works
+Short circuit causing smell of burning wire in Block A Room 101.,Electrical,HIGH,HIGH,Electrical Works
+Short circuit causing smell of burning wire in Block B Classroom 204.,Electrical,HIGH,HIGH,Electrical Works
+Short circuit causing smell of burning wire in Hostel 3 Floor 2.,Electrical,HIGH,HIGH,Electrical Works
+Short circuit causing smell of burning wire in Central Library 3rd Floor.,Electrical,HIGH,HIGH,Electrical Works
+Short circuit causing smell of burning wire in Block C Lab 2.,Electrical,HIGH,HIGH,Electrical Works
+Short circuit causing smell of burning wire in Main Auditorium.,Electrical,HIGH,HIGH,Electrical Works
+Ceiling fan in Block A Room 101 is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Ceiling fan in Block B Classroom 204 is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Ceiling fan in Hostel 3 Floor 2 is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Ceiling fan in Central Library 3rd Floor is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Ceiling fan in Block C Lab 2 is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Ceiling fan in Main Auditorium is not spinning at full speed.,Electrical,MEDIUM,LOW,Electrical Works
+Power supply trip in Block A Room 101 during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Power supply trip in Block B Classroom 204 during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Power supply trip in Hostel 3 Floor 2 during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Power supply trip in Central Library 3rd Floor during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Power supply trip in Block C Lab 2 during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Power supply trip in Main Auditorium during lab session.,Electrical,HIGH,MEDIUM,Electrical Works
+Extension box socket burnt out in Block A Room 101.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Extension box socket burnt out in Block B Classroom 204.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Extension box socket burnt out in Hostel 3 Floor 2.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Extension box socket burnt out in Central Library 3rd Floor.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Extension box socket burnt out in Block C Lab 2.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Extension box socket burnt out in Main Auditorium.,Electrical,MEDIUM,MEDIUM,Electrical Works
+Elevator light flickering inside lift shaft in Block A Room 101.,Electrical,LOW,LOW,Electrical Works
+Elevator light flickering inside lift shaft in Block B Classroom 204.,Electrical,LOW,LOW,Electrical Works
+Elevator light flickering inside lift shaft in Hostel 3 Floor 2.,Electrical,LOW,LOW,Electrical Works
+Elevator light flickering inside lift shaft in Central Library 3rd Floor.,Electrical,LOW,LOW,Electrical Works
+Elevator light flickering inside lift shaft in Block C Lab 2.,Electrical,LOW,LOW,Electrical Works
+Elevator light flickering inside lift shaft in Main Auditorium.,Electrical,LOW,LOW,Electrical Works
+Water leaking continuously from sink pipe in Block A Room 101.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Water leaking continuously from sink pipe in Block B Classroom 204.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Water leaking continuously from sink pipe in Hostel 3 Floor 2.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Water leaking continuously from sink pipe in Central Library 3rd Floor.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Water leaking continuously from sink pipe in Block C Lab 2.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Water leaking continuously from sink pipe in Main Auditorium.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Bathroom drain clogged completely in Block A Room 101.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Bathroom drain clogged completely in Block B Classroom 204.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Bathroom drain clogged completely in Hostel 3 Floor 2.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Bathroom drain clogged completely in Central Library 3rd Floor.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Bathroom drain clogged completely in Block C Lab 2.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Bathroom drain clogged completely in Main Auditorium.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Block A Room 101!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Block B Classroom 204!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Hostel 3 Floor 2!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Central Library 3rd Floor!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Block C Lab 2!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Major water pipe leak flooding hallway in Main Auditorium!,Plumbing,CRITICAL,HIGH,Maintenance & Plumbing
+Drinking water tap missing handle in Block A Room 101.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Drinking water tap missing handle in Block B Classroom 204.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Drinking water tap missing handle in Hostel 3 Floor 2.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Drinking water tap missing handle in Central Library 3rd Floor.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Drinking water tap missing handle in Block C Lab 2.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Drinking water tap missing handle in Main Auditorium.,Plumbing,LOW,LOW,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Block A Room 101.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Block B Classroom 204.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Hostel 3 Floor 2.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Central Library 3rd Floor.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Block C Lab 2.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+Foul sewage odor coming from drainage pipe in Main Auditorium.,Plumbing,HIGH,HIGH,Maintenance & Plumbing
+No water in washroom tap in Block A Room 101.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+No water in washroom tap in Block B Classroom 204.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+No water in washroom tap in Hostel 3 Floor 2.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+No water in washroom tap in Central Library 3rd Floor.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+No water in washroom tap in Block C Lab 2.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+No water in washroom tap in Main Auditorium.,Plumbing,MEDIUM,MEDIUM,Maintenance & Plumbing
+Broken window glass with sharp edges hanging in Block A Room 101.,Infrastructure,HIGH,HIGH,Estate & Facilities
+Broken window glass with sharp edges hanging in Block B Classroom 204.,Infrastructure,HIGH,HIGH,Estate & Facilities
+Broken window glass with sharp edges hanging in Hostel 3 Floor 2.,Infrastructure,HIGH,HIGH,Estate & Facilities
+Broken window glass with sharp edges hanging in Central Library 3rd Floor.,Infrastructure,HIGH,HIGH,Estate & Facilities
+Broken window glass with sharp edges hanging in Block C Lab 2.,Infrastructure,HIGH,HIGH,Estate & Facilities
+Broken window glass with sharp edges hanging in Main Auditorium.,Infrastructure,HIGH,HIGH,Estate & Facilities
+"Door latch broken in Block A Room 101, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+"Door latch broken in Block B Classroom 204, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+"Door latch broken in Hostel 3 Floor 2, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+"Door latch broken in Central Library 3rd Floor, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+"Door latch broken in Block C Lab 2, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+"Door latch broken in Main Auditorium, cannot lock room.",Infrastructure,MEDIUM,LOW,Estate & Facilities
+Ceiling plaster cracked and falling down in Block A Room 101!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Ceiling plaster cracked and falling down in Block B Classroom 204!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Ceiling plaster cracked and falling down in Hostel 3 Floor 2!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Ceiling plaster cracked and falling down in Central Library 3rd Floor!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Ceiling plaster cracked and falling down in Block C Lab 2!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Ceiling plaster cracked and falling down in Main Auditorium!,Infrastructure,CRITICAL,HIGH,Estate & Facilities
+Staircase steps chipped and dangerous in Block A Room 101.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Staircase steps chipped and dangerous in Block B Classroom 204.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Staircase steps chipped and dangerous in Hostel 3 Floor 2.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Staircase steps chipped and dangerous in Central Library 3rd Floor.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Staircase steps chipped and dangerous in Block C Lab 2.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Staircase steps chipped and dangerous in Main Auditorium.,Infrastructure,MEDIUM,MEDIUM,Estate & Facilities
+Desk wooden leg cracked in Block A Room 101.,Infrastructure,LOW,LOW,Estate & Facilities
+Desk wooden leg cracked in Block B Classroom 204.,Infrastructure,LOW,LOW,Estate & Facilities
+Desk wooden leg cracked in Hostel 3 Floor 2.,Infrastructure,LOW,LOW,Estate & Facilities
+Desk wooden leg cracked in Central Library 3rd Floor.,Infrastructure,LOW,LOW,Estate & Facilities
+Desk wooden leg cracked in Block C Lab 2.,Infrastructure,LOW,LOW,Estate & Facilities
+Desk wooden leg cracked in Main Auditorium.,Infrastructure,LOW,LOW,Estate & Facilities
+Classroom projector in Block A Room 101 display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Classroom projector in Block B Classroom 204 display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Classroom projector in Hostel 3 Floor 2 display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Classroom projector in Central Library 3rd Floor display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Classroom projector in Block C Lab 2 display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Classroom projector in Main Auditorium display lamp failing.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Block A Room 101, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Block B Classroom 204, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Hostel 3 Floor 2, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Central Library 3rd Floor, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Block C Lab 2, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+"Wi-Fi router offline in Main Auditorium, zero signal.",IT / Technical,HIGH,MEDIUM,IT Support Desk
+Lab computer in Block A Room 101 keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Lab computer in Block B Classroom 204 keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Lab computer in Hostel 3 Floor 2 keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Lab computer in Central Library 3rd Floor keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Lab computer in Block C Lab 2 keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+Lab computer in Main Auditorium keeps freezing on startup.,IT / Technical,MEDIUM,MEDIUM,IT Support Desk
+HDMI connector pin damaged on podium in Block A Room 101.,IT / Technical,LOW,LOW,IT Support Desk
+HDMI connector pin damaged on podium in Block B Classroom 204.,IT / Technical,LOW,LOW,IT Support Desk
+HDMI connector pin damaged on podium in Hostel 3 Floor 2.,IT / Technical,LOW,LOW,IT Support Desk
+HDMI connector pin damaged on podium in Central Library 3rd Floor.,IT / Technical,LOW,LOW,IT Support Desk
+HDMI connector pin damaged on podium in Block C Lab 2.,IT / Technical,LOW,LOW,IT Support Desk
+HDMI connector pin damaged on podium in Main Auditorium.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Block A Room 101.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Block B Classroom 204.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Hostel 3 Floor 2.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Central Library 3rd Floor.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Block C Lab 2.,IT / Technical,LOW,LOW,IT Support Desk
+LAN port inactive on wall near desk in Main Auditorium.,IT / Technical,LOW,LOW,IT Support Desk
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+College shuttle bus brake noise in bus route 1.,Transportation,HIGH,HIGH,Fleet & Transit
+Bus schedule delayed by 1 hour at Block A Room 101.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus schedule delayed by 1 hour at Block B Classroom 204.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus schedule delayed by 1 hour at Hostel 3 Floor 2.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus schedule delayed by 1 hour at Central Library 3rd Floor.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus schedule delayed by 1 hour at Block C Lab 2.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus schedule delayed by 1 hour at Main Auditorium.,Transportation,MEDIUM,MEDIUM,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Bus window glass loose on route 3.,Transportation,LOW,LOW,Fleet & Transit
+Security gate lock broken at Block A Room 101.,Security,HIGH,HIGH,Campus Security
+Security gate lock broken at Block B Classroom 204.,Security,HIGH,HIGH,Campus Security
+Security gate lock broken at Hostel 3 Floor 2.,Security,HIGH,HIGH,Campus Security
+Security gate lock broken at Central Library 3rd Floor.,Security,HIGH,HIGH,Campus Security
+Security gate lock broken at Block C Lab 2.,Security,HIGH,HIGH,Campus Security
+Security gate lock broken at Main Auditorium.,Security,HIGH,HIGH,Campus Security
+Suspicious stranger wandering near Block A Room 101 late night!,Security,CRITICAL,CRITICAL,Campus Security
+Suspicious stranger wandering near Block B Classroom 204 late night!,Security,CRITICAL,CRITICAL,Campus Security
+Suspicious stranger wandering near Hostel 3 Floor 2 late night!,Security,CRITICAL,CRITICAL,Campus Security
+Suspicious stranger wandering near Central Library 3rd Floor late night!,Security,CRITICAL,CRITICAL,Campus Security
+Suspicious stranger wandering near Block C Lab 2 late night!,Security,CRITICAL,CRITICAL,Campus Security
+Suspicious stranger wandering near Main Auditorium late night!,Security,CRITICAL,CRITICAL,Campus Security
+CCTV camera glass dirty in Block A Room 101.,Security,LOW,LOW,Campus Security
+CCTV camera glass dirty in Block B Classroom 204.,Security,LOW,LOW,Campus Security
+CCTV camera glass dirty in Hostel 3 Floor 2.,Security,LOW,LOW,Campus Security
+CCTV camera glass dirty in Central Library 3rd Floor.,Security,LOW,LOW,Campus Security
+CCTV camera glass dirty in Block C Lab 2.,Security,LOW,LOW,Campus Security
+CCTV camera glass dirty in Main Auditorium.,Security,LOW,LOW,Campus Security
+Unattended bag found in Block A Room 101.,Security,HIGH,HIGH,Campus Security
+Unattended bag found in Block B Classroom 204.,Security,HIGH,HIGH,Campus Security
+Unattended bag found in Hostel 3 Floor 2.,Security,HIGH,HIGH,Campus Security
+Unattended bag found in Central Library 3rd Floor.,Security,HIGH,HIGH,Campus Security
+Unattended bag found in Block C Lab 2.,Security,HIGH,HIGH,Campus Security
+Unattended bag found in Main Auditorium.,Security,HIGH,HIGH,Campus Security
+Garbage dumping heap uncleaned in Block A Room 101.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Garbage dumping heap uncleaned in Block B Classroom 204.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Garbage dumping heap uncleaned in Hostel 3 Floor 2.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Garbage dumping heap uncleaned in Central Library 3rd Floor.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Garbage dumping heap uncleaned in Block C Lab 2.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Garbage dumping heap uncleaned in Main Auditorium.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Floor covered with spilled coffee in Block A Room 101.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Floor covered with spilled coffee in Block B Classroom 204.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Floor covered with spilled coffee in Hostel 3 Floor 2.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Floor covered with spilled coffee in Central Library 3rd Floor.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Floor covered with spilled coffee in Block C Lab 2.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Floor covered with spilled coffee in Main Auditorium.,Cleaning,LOW,LOW,Sanitation & Hygiene
+Restroom floor slippery with water leak in Block A Room 101.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Restroom floor slippery with water leak in Block B Classroom 204.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Restroom floor slippery with water leak in Hostel 3 Floor 2.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Restroom floor slippery with water leak in Central Library 3rd Floor.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Restroom floor slippery with water leak in Block C Lab 2.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Restroom floor slippery with water leak in Main Auditorium.,Cleaning,MEDIUM,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Block A Room 101.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Block B Classroom 204.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Hostel 3 Floor 2.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Central Library 3rd Floor.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Block C Lab 2.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Dustbins overflowing with food waste in Main Auditorium.,Cleaning,HIGH,MEDIUM,Sanitation & Hygiene
+Course materials link broken on portal for Block A Room 101.,Academic,MEDIUM,LOW,Academic Affairs
+Course materials link broken on portal for Block B Classroom 204.,Academic,MEDIUM,LOW,Academic Affairs
+Course materials link broken on portal for Hostel 3 Floor 2.,Academic,MEDIUM,LOW,Academic Affairs
+Course materials link broken on portal for Central Library 3rd Floor.,Academic,MEDIUM,LOW,Academic Affairs
+Course materials link broken on portal for Block C Lab 2.,Academic,MEDIUM,LOW,Academic Affairs
+Course materials link broken on portal for Main Auditorium.,Academic,MEDIUM,LOW,Academic Affairs
+Lab exam equipment missing in Block A Room 101.,Academic,HIGH,MEDIUM,Academic Affairs
+Lab exam equipment missing in Block B Classroom 204.,Academic,HIGH,MEDIUM,Academic Affairs
+Lab exam equipment missing in Hostel 3 Floor 2.,Academic,HIGH,MEDIUM,Academic Affairs
+Lab exam equipment missing in Central Library 3rd Floor.,Academic,HIGH,MEDIUM,Academic Affairs
+Lab exam equipment missing in Block C Lab 2.,Academic,HIGH,MEDIUM,Academic Affairs
+Lab exam equipment missing in Main Auditorium.,Academic,HIGH,MEDIUM,Academic Affairs
+Grades error in internal evaluation for Block A Room 101.,Academic,MEDIUM,LOW,Academic Affairs
+Grades error in internal evaluation for Block B Classroom 204.,Academic,MEDIUM,LOW,Academic Affairs
+Grades error in internal evaluation for Hostel 3 Floor 2.,Academic,MEDIUM,LOW,Academic Affairs
+Grades error in internal evaluation for Central Library 3rd Floor.,Academic,MEDIUM,LOW,Academic Affairs
+Grades error in internal evaluation for Block C Lab 2.,Academic,MEDIUM,LOW,Academic Affairs
+Grades error in internal evaluation for Main Auditorium.,Academic,MEDIUM,LOW,Academic Affairs
+Hostel room door lock jammed in Block A Room 101!,Hostel,CRITICAL,HIGH,Hostel Management
+Hostel room door lock jammed in Block B Classroom 204!,Hostel,CRITICAL,HIGH,Hostel Management
+Hostel room door lock jammed in Hostel 3 Floor 2!,Hostel,CRITICAL,HIGH,Hostel Management
+Hostel room door lock jammed in Central Library 3rd Floor!,Hostel,CRITICAL,HIGH,Hostel Management
+Hostel room door lock jammed in Block C Lab 2!,Hostel,CRITICAL,HIGH,Hostel Management
+Hostel room door lock jammed in Main Auditorium!,Hostel,CRITICAL,HIGH,Hostel Management
+Hot water supply turned off in Block A Room 101.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Hot water supply turned off in Block B Classroom 204.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Hot water supply turned off in Hostel 3 Floor 2.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Hot water supply turned off in Central Library 3rd Floor.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Hot water supply turned off in Block C Lab 2.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Hot water supply turned off in Main Auditorium.,Hostel,MEDIUM,MEDIUM,Hostel Management
+Window mesh screen torn in Block A Room 101.,Hostel,LOW,LOW,Hostel Management
+Window mesh screen torn in Block B Classroom 204.,Hostel,LOW,LOW,Hostel Management
+Window mesh screen torn in Hostel 3 Floor 2.,Hostel,LOW,LOW,Hostel Management
+Window mesh screen torn in Central Library 3rd Floor.,Hostel,LOW,LOW,Hostel Management
+Window mesh screen torn in Block C Lab 2.,Hostel,LOW,LOW,Hostel Management
+Window mesh screen torn in Main Auditorium.,Hostel,LOW,LOW,Hostel Management
+General inquiry regarding campus sports facilities at Block A Room 101.,Other,LOW,LOW,Administrative Services
+General inquiry regarding campus sports facilities at Block B Classroom 204.,Other,LOW,LOW,Administrative Services
+General inquiry regarding campus sports facilities at Hostel 3 Floor 2.,Other,LOW,LOW,Administrative Services
+General inquiry regarding campus sports facilities at Central Library 3rd Floor.,Other,LOW,LOW,Administrative Services
+General inquiry regarding campus sports facilities at Block C Lab 2.,Other,LOW,LOW,Administrative Services
+General inquiry regarding campus sports facilities at Main Auditorium.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Block A Room 101.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Block B Classroom 204.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Hostel 3 Floor 2.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Central Library 3rd Floor.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Block C Lab 2.,Other,LOW,LOW,Administrative Services
+Lost property query for item lost near Main Auditorium.,Other,LOW,LOW,Administrative Services

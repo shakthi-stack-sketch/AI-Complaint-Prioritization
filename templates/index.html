@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Complaint Operations Center | Classification & Priority System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Rail -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>AI COMPLAINT OPS</h2>
+                    <span>Operations & Routing Engine</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item" data-view="overview">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#" class="nav-item active" data-view="new">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span>New Complaint</span>
+                </a>
+                <a href="#" class="nav-item" data-view="queue">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Complaint Queue</span>
+                    <span class="badge" id="queueBadge">0</span>
+                </a>
+                <a href="#" class="nav-item" data-view="analytics">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="nav-item" data-view="insights">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Model Insights</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span>
+                    <div class="status-info">
+                        <strong id="modelStatusText">scikit-learn ML Active</strong>
+                        <small>TF-IDF + Multi-Class Model</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Bar -->
+            <header class="top-header">
+                <div class="header-titles">
+                    <h1 id="pageTitle">Complaint Operations Center</h1>
+                    <p id="pageSubtitle">Classify, prioritize and route complaints using NLP and Machine Learning.</p>
+                </div>
+                <div class="header-actions">
+                    <div class="system-tag">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span id="systemMetaText">Dataset: 383 Samples | Cat Accuracy: 84.4%</span>
+                    </div>
+                    <button class="btn btn-secondary btn-sm" id="btnQuickNew">
+                        <i class="fa-solid fa-plus"></i> New Analysis
+                    </button>
+                </div>
+            </header>
+
+            <!-- Notifications / Toast Container -->
+            <div id="toastContainer" class="toast-container"></div>
+
+            <!-- VIEW 1: NEW COMPLAINT -->
+            <section id="view-new" class="view-section active">
+                <div class="card input-card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <h3>Submit Natural Language Complaint</h3>
+                        </div>
+                        <span class="subtitle-text">Enter text or use voice input for automated AI triage</span>
+                    </div>
+
+                    <div class="card-body">
+                        <!-- Quick Presets -->
+                        <div class="preset-bar">
+                            <span class="preset-label"><i class="fa-solid fa-bolt"></i> Quick Presets:</span>
+                            <div class="preset-tags" id="presetContainer">
+                                <!-- Loaded dynamically or static fallbacks -->
+                            </div>
+                        </div>
+
+                        <!-- Input Text Area -->
+                        <div class="textarea-wrapper">
+                            <textarea id="complaintInput" rows="5" placeholder="Describe the issue in detail... e.g. Water is leaking continuously from the ceiling of Block B classroom 204."></textarea>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="input-controls">
+                            <div class="left-controls">
+                                <button type="button" class="btn btn-outline" id="btnVoice">
+                                    <i class="fa-solid fa-microphone" id="micIcon"></i>
+                                    <span id="micText">Voice Input</span>
+                                </button>
+                                <span class="voice-status" id="voiceStatus">Microphone ready</span>
+                            </div>
+                            <div class="right-controls">
+                                <button type="button" class="btn btn-ghost" id="btnClearInput">
+                                    <i class="fa-solid fa-eraser"></i> Clear
+                                </button>
+                                <button type="button" class="btn btn-primary" id="btnAnalyze">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Analyze Complaint</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analysis Report Card (Hidden until analyzed) -->
+                <div class="card report-card hidden" id="analysisReportCard">
+                    <div class="report-header">
+                        <div class="report-brand">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                            <div>
+                                <h3>AI ANALYSIS REPORT</h3>
+                                <span class="report-timestamp" id="reportTimestamp">Generated just now</span>
+                            </div>
+                        </div>
+                        <div class="report-badges">
+                            <span class="badge-priority" id="reportPriority">HIGH</span>
+                        </div>
+                    </div>
+
+                    <div class="report-grid">
+                        <!-- Key Properties -->
+                        <div class="report-item">
+                            <span class="label">Complaint Category</span>
+                            <strong class="value highlight" id="reportCategory">Plumbing / Infrastructure</strong>
+                        </div>
+                        <div class="report-item">
+                            <span class="label">Priority Level</span>
+                            <strong class="value" id="reportPriorityText">HIGH</strong>
+                        </div>
+                        <div class="report-item">
+                            <span class="label">Severity Level</span>
+                            <strong class="value" id="reportSeverity">HIGH</strong>
+                        </div>
+                        <div class="report-item">
+                            <span class="label">ML Confidence Score</span>
+                            <div class="confidence-box">
+                                <span class="value" id="reportConfidenceText">87.0%</span>
+                                <div class="confidence-bar">
+                                    <div class="confidence-fill" id="reportConfidenceFill" style="width: 87%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report-item full-width">
+                            <span class="label">Recommended Department</span>
+                            <strong class="value dept-tag" id="reportDepartment"><i class="fa-solid fa-building-user"></i> Maintenance & Plumbing</strong>
+                        </div>
+                    </div>
+
+                    <!-- Extracted Entities -->
+                    <div class="extracted-box">
+                        <div class="section-heading">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <h4>Extracted Information (NLP Entity Analysis)</h4>
+                        </div>
+                        <div class="entity-grid">
+                            <div class="entity-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <small>Extracted Location</small>
+                                    <strong id="reportLocation">Block B, Classroom 204</strong>
+                                </div>
+                            </div>
+                            <div class="entity-card">
+                                <i class="fa-solid fa-cubes"></i>
+                                <div>
+                                    <small>Facility Item / Object</small>
+                                    <strong id="reportObject">Ceiling / Water Pipe</strong>
+                                </div>
+                            </div>
+                            <div class="entity-card">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <div>
+                                    <small>Identified Problem</small>
+                                    <strong id="reportProblem">Continuous Water Leak</strong>
+                                </div>
+                            </div>
+                            <div class="entity-card">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <small>Time Reference</small>
+                                    <strong id="reportTime">Not Specified</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Action Box -->
+                    <div class="action-box">
+                        <i class="fa-solid fa-route"></i>
+                        <div>
+                            <small>Automated Action & Routing Protocol</small>
+                            <p id="reportAction">PRIORITY WORK ORDER: Assign senior technician from Maintenance & Plumbing for inspection within 2 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reasoning Signals -->
+                    <div class="signals-section">
+                        <small class="label">Reasoning Signals (Extracted TF-IDF Features & Key Tokens):</small>
+                        <div class="signal-tags" id="reportSignals">
+                            <!-- Tags added dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Report Actions Footer -->
+                    <div class="report-actions">
+                        <button class="btn btn-primary" id="btnAddToQueue">
+                            <i class="fa-solid fa-folder-plus"></i> Add to Operations Queue
+                        </button>
+                        <button class="btn btn-outline" id="btnCopyReport">
+                            <i class="fa-solid fa-copy"></i> Copy Summary
+                        </button>
+                        <button class="btn btn-ghost" id="btnNewAnalysis">
+                            <i class="fa-solid fa-rotate-right"></i> Analyze Another
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 2: OVERVIEW -->
+            <section id="view-overview" class="view-section">
+                <!-- Operational Metrics -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon blue">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <div class="metric-data">
+                            <span class="metric-label">Total Complaints</span>
+                            <h2 id="metricTotal">0</h2>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon orange">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="metric-data">
+                            <span class="metric-label">High Priority</span>
+                            <h2 id="metricHigh">0</h2>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon red">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="metric-data">
+                            <span class="metric-label">Critical Alerts</span>
+                            <h2 id="metricCritical">0</h2>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon green">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="metric-data">
+                            <span class="metric-label">Resolved Tickets</span>
+                            <h2 id="metricResolved">0</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State Container -->
+                <div class="empty-state-card" id="overviewEmptyState">
+                    <div class="empty-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h3>No Complaints Analyzed Yet</h3>
+                    <p>There are no tickets in the current session work queue. Navigate to "New Complaint" to analyze a ticket or load sample demo tickets.</p>
+                    <div class="empty-actions">
+                        <button class="btn btn-primary" id="btnGoToNew">
+                            <i class="fa-solid fa-plus"></i> Create New Complaint
+                        </button>
+                        <button class="btn btn-outline" id="btnLoadDemoQueue">
+                            <i class="fa-solid fa-download"></i> Load Demo Sample Tickets
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Charts & Activity Grid -->
+                <div class="overview-charts-grid hidden" id="overviewChartsArea">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <h3>Priority Distribution</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="distribution-bars" id="priorityDistributionBars">
+                                <!-- Priority progress bars -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <h3>Top Category Breakdown</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="category-list" id="categoryBreakdownList">
+                                <!-- Category bars -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 3: COMPLAINT QUEUE -->
+            <section id="view-queue" class="view-section">
+                <div class="card table-card">
+                    <div class="table-controls">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="queueSearch" placeholder="Search complaint, location, or ID...">
+                        </div>
+                        <div class="filter-group">
+                            <select id="filterCategory" class="form-select">
+                                <option value="">All Categories</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Plumbing">Plumbing</option>
+                                <option value="Infrastructure">Infrastructure</option>
+                                <option value="IT / Technical">IT / Technical</option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Security">Security</option>
+                                <option value="Cleaning">Cleaning</option>
+                                <option value="Academic">Academic</option>
+                                <option value="Hostel">Hostel</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <select id="filterPriority" class="form-select">
+                                <option value="">All Priorities</option>
+                                <option value="CRITICAL">CRITICAL</option>
+                                <option value="HIGH">HIGH</option>
+                                <option value="MEDIUM">MEDIUM</option>
+                                <option value="LOW">LOW</option>
+                            </select>
+                            <select id="filterStatus" class="form-select">
+                                <option value="">All Statuses</option>
+                                <option value="New">New</option>
+                                <option value="In Progress">In Progress</option>
+                                <option value="Resolved">Resolved</option>
+                            </select>
+                            <select id="sortQueue" class="form-select">
+                                <option value="priority">Sort by Priority</option>
+                                <option value="newest">Sort by Newest</option>
+                                <option value="category">Sort by Category</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="queue-meta-bar">
+                        <span id="queueCountText">Showing 0 of 0 complaints</span>
+                        <button class="btn btn-ghost btn-sm" id="btnClearQueue">
+                            <i class="fa-solid fa-trash-can"></i> Clear Session Queue
+                        </button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="queue-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Complaint Summary</th>
+                                    <th>Category</th>
+                                    <th>Priority</th>
+                                    <th>Location</th>
+                                    <th>Department</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="queueTableBody">
+                                <!-- Rows inserted dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 4: ANALYTICS -->
+            <section id="view-analytics" class="view-section">
+                <div class="analytics-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <i class="fa-solid fa-building-shield"></i>
+                                <h3>Department Workload Routing</h3>
+                            </div>
+                        </div>
+                        <div class="card-body" id="analyticsDeptWorkload">
+                            <p class="text-muted">Analyze complaints in queue to view department workload distribution.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <h3>Confidence Score Distribution</h3>
+                            </div>
+                        </div>
+                        <div class="card-body" id="analyticsConfidence">
+                            <p class="text-muted">Analyze complaints in queue to view ML model confidence stats.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 5: MODEL INSIGHTS -->
+            <section id="view-insights" class="view-section">
+                <!-- Pipeline Architecture Flow -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h3>Machine Learning & NLP Pipeline Architecture</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="pipeline-flow">
+                            <div class="pipeline-step">
+                                <div class="step-num">1</div>
+                                <h4>Natural Text Input</h4>
+                                <p>User natural language complaint query</p>
+                            </div>
+                            <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="pipeline-step">
+                                <div class="step-num">2</div>
+                                <h4>Preprocessing</h4>
+                                <p>Lowercasing, cleaning, tokenization</p>
+                            </div>
+                            <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="pipeline-step">
+                                <div class="step-num">3</div>
+                                <h4>TF-IDF Vectorization</h4>
+                                <p>Unigram & Bigram feature extraction (2.5k features)</p>
+                            </div>
+                            <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="pipeline-step">
+                                <div class="step-num">4</div>
+                                <h4>Supervised ML</h4>
+                                <p>Logistic Regression (Cat) & Random Forest (Prio)</p>
+                            </div>
+                            <div class="pipeline-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="pipeline-step">
+                                <div class="step-num">5</div>
+                                <h4>NLP Entity & Routing</h4>
+                                <p>Location regex & Work order generation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Model Evaluation Metrics -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h3>Evaluated Model Metrics (Empirical Test Data)</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="model-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-label">Training Dataset Size</span>
+                                <h3 id="insightDatasetSize">383 Samples</h3>
+                                <small>10 Facility & Academic Categories</small>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Category Accuracy</span>
+                                <h3 id="insightCatAcc" class="highlight-green">84.42%</h3>
+                                <small>Logistic Regression (C=2.0)</small>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Priority Accuracy</span>
+                                <h3 id="insightPrioAcc" class="highlight-purple">72.73%</h3>
+                                <small>Random Forest (100 Trees)</small>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Vector Space Dimension</span>
+                                <h3 id="insightFeatures">2,500 N-Grams</h3>
+                                <small>Sublinear TF-IDF Scaling</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top TF-IDF Keywords per Category -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i class="fa-solid fa-tags"></i>
+                            <h3>Top Feature Keywords by Category (TF-IDF Coefficients)</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="category-keywords-grid" id="categoryKeywordsGrid">
+                            <!-- Category tags generated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Ticket Details Modal -->
+    <div class="modal-overlay hidden" id="ticketModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-ticket"></i> Ticket Details: <span id="modalTicketId">CMP-1001</span></h3>
+                <button class="modal-close" id="btnCloseModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal details -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
